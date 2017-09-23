@@ -24,7 +24,7 @@ name, *_, (*_, housenumber) = record
 print(name, housenumber)  # name housenumber
 
 # 3、collections模块的deque函数，构建一个队列
-# 1、双向操作，appendleft(),2、固定长度的队列，先进先出
+# 双向操作，appendleft(),
 from collections import deque
 
 q = deque()
@@ -34,7 +34,7 @@ q.append(3)
 print(q)  # deque([1, 2, 3])
 q.appendleft(4)
 print(q)  # deque([4, 1, 2, 3])
-
+# 固定长度的队列，先进先出
 l = deque(maxlen=3)
 l.append(1)
 l.append(2)
